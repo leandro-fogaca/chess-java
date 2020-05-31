@@ -15,5 +15,10 @@ public class Bishop extends ChessPiece {
 			return "B";
 		}
 
-	}
+		@Override
+		public boolean[][] possibleMoves() {
+			boolean[][] mat = new boolean[getBoard().getColumns()][getBoard().getRows()];
+			return mat;
+		}
+}
 

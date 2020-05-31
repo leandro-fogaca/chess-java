@@ -12,5 +12,8 @@ public class Knight extends ChessPiece {
 	public String toString() {
 		return "H";
 	}
-
+	public boolean[][] possibleMoves() {
+		boolean[][] mat = new boolean[getBoard().getColumns()][getBoard().getRows()];
+		return mat;
+	}
 }
